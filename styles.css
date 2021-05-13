@@ -1,0 +1,115 @@
+
+*{box-sizing: border-box;}
+
+body,html{height: 100%;}
+
+body{
+  padding:0;
+  margin:0;
+  background-color:#081c15;
+}
+
+h5{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  color:white;
+  padding:0;
+  margin:0;
+  margin-bottom:10px;
+}
+
+p{
+  font-family: 'Open Sans', sans-serif;
+  font-weight:300;
+  color:white;
+  font-size:12px;
+  padding:0;
+  margin:0;
+}
+
+.container{
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 10%;
+  right: 10%;
+  top:25%;
+  max-width: 500px;
+}
+
+.arrow-left{
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left:10px solid #006466;
+  position:absolute;
+  right:-9px;
+  top:20px;
+}
+
+.arrow-right{
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-right:10px solid #006466;
+  position:absolute;
+  left:-9px;
+  top:20px;
+}
+
+img{
+  height:50px;
+  width:50px;
+  border-radius: 50%;
+  border:3px solid #b7e4c7;
+  object-fit: cover;
+}
+
+.content{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom:40px;
+  width:100%;
+}
+
+.final{
+  margin-bottom:0;
+}
+
+.message{
+  width: 100%;
+  margin-right:20px;
+}
+
+.right{
+  margin-right:0;
+  margin-left:20px;
+}
+
+.text{
+  background-color: #006466;
+  border-radius: 8px;
+  padding:12px;
+  position:relative;
+  width:100%;
+}
+
+
+.time{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+  color:white;
+  margin-left:10px;
+  opacity: 0;
+  transform: translateY(-25%);
+  transition: transform 0.4s linear, opacity 0.3s linear;
+}
+
+.message:hover .time{
+  opacity: 1;
+  transform: translateY(0%);
+}
